@@ -30,6 +30,11 @@
               "black-txt": "#131318",
               "gray-txt": "#13131899",
             },
+            backgroundImage: {
+        'background-one': "url('./images/2.png')",
+        'background-two': "url('./images/3.png')",
+        'background-three': "url('./images/4.png')",
+      },
           },
         },
       };
@@ -194,9 +199,44 @@
             <p class="text-gray-txt text-center font-medium">Prime Training Ground for Aspiring Athletes at Our Hockey Club.</p>
           </div>
         </div>
-
       </section>
       <!-- Club Section ends -->
+
+      <!-- Program Section starts -->
+      <section class="mt-24">
+        <div class="p-4 lg:p-8 border-y-2 border-dashed border-[gray-txt] space-y-4">
+          <h1 class="text-black-txt text-center font-extrabold text-2xl md:text-3xl lg:text-4xl">
+            Program Sections
+          </h1>
+          <p
+            class="text-gray-txt text-center font-medium max-w-[600px] mx-auto"
+          >
+          Explore our diverse and engaging programs, offering unique opportunities for learning, growth, and enjoyment in a welcoming and supportive environment.
+          </p>
+        </div>
+
+        <div class="grid-container mt-12 grid grid-cols-1 lg:grid-cols-2 gap-6">
+          
+          <div class="bg-background-one bg-no-repeat bg-center bg-cover p-6 md:p-8 lg:p-10 rounded-2xl space-y-4">
+            <h1 class="text-white font-extrabold text-3xl mt-0 md:mt-16 lg:mt-24">Junior Program</h1>
+            <p class="text-white font-semibold max-w-[500px]">Exciting hockey learning for kids, fostering skills and teamwork in a fun environment for budding young players.</p>
+            <button><a class="btn bg-light-red text-white border-none">Register Now!</a></button>
+          </div>
+          <div class="bg-background-two bg-no-repeat bg-center bg-cover p-6 md:p-8 lg:p-10 rounded-2xl space-y-4">
+            <h1 class="text-white font-extrabold text-3xl mt-0 md:mt-16 lg:mt-24">Teenager Program</h1>
+            <p class="text-white font-semibold max-w-[500px]">Tailored hockey training for teens, enhancing skills, fitness, and camaraderie in a dynamic and engaging developmental program.</p>
+            <button><a class="btn bg-light-red text-white border-none">Register Now!</a></button>
+          </div>
+          <div class="bg-background-three bg-no-repeat bg-center bg-cover p-6 md:p-8 lg:p-10 rounded-2xl space-y-4 lg:col-span-2">
+            <h1 class="text-white font-extrabold text-3xl mt-0 md:mt-16 lg:mt-48">Professional Program</h1>
+            <p class="text-white font-semibold max-w-[500px]">Advanced hockey coaching for aspiring players, focusing on elite skills, strategic play, and career development for a pro-level game.</p>
+            <button><a class="btn bg-light-red text-white border-none">Register Now!</a></button>
+          </div>
+          
+
+        </div>
+      </section>
+      <!-- Program Section ends -->
     </main>
     <footer>
       <div class="container mx-auto"></div>
