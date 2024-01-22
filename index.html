@@ -23,6 +23,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'light-red' : '#FF4240',
               }
             }
           }
@@ -36,10 +37,39 @@
       }
     </style>
     
-    <title>Template</title>
+    <title>Rink Rivals</title>
   </head>
   <body class="font-manrope">
     <header class="container mx-auto">
+      <!-- Nav section starts -->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 lg:hidden">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </div>            
+            <a class="btn btn-ghost text-3xl md:text-4xl lg:text-4xl font-extrabold">Rink<span class="text-light-red">Rivals</span></a>
+          </div>
+          <div class="navbar-center hidden font-bold lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li class="text-light-red"><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end gap-5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 hidden lg:flex md:flex">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>            
+            <a class="btn bg-light-red text-white">Get Ticket</a>
+          </div>
+        </div>
+      </nav>
+      <!-- Nav section ends -->
 
     </header>
     <main class="container mx-auto">
