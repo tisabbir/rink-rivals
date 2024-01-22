@@ -12,31 +12,36 @@
       rel="stylesheet"
     />
     <!-- Daisy UI and tailwind setup -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Tailwind Custom Color Style -->
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'light-red' : '#FF4240',
-              }
-            }
-          }
-        }
-      </script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "light-red": "#FF4240",
+              "black-txt": "#131318",
+              "gray-txt": "#13131899",
+            },
+          },
+        },
+      };
+    </script>
 
-      <!-- Custom Styles -->
+    <!-- Custom Styles -->
     <style>
       .font-manrope {
         font-family: "Manrope", sans-serif;
       }
     </style>
-    
+
     <title>Rink Rivals</title>
   </head>
   <body class="font-manrope">
@@ -46,11 +51,25 @@
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <div>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 lg:hidden">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 lg:hidden"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
               </svg>
-            </div>            
-            <a class="btn btn-ghost text-3xl md:text-4xl lg:text-4xl font-extrabold">Rink<span class="text-light-red">Rivals</span></a>
+            </div>
+            <a
+              class="btn btn-ghost text-3xl md:text-4xl lg:text-4xl font-extrabold"
+              >Rink<span class="text-light-red">Rivals</span></a
+            >
           </div>
           <div class="navbar-center hidden font-bold lg:flex">
             <ul class="menu menu-horizontal px-1">
@@ -62,9 +81,20 @@
             </ul>
           </div>
           <div class="navbar-end gap-5">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 hidden lg:flex md:flex">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-            </svg>            
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 hidden lg:flex md:flex"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
             <a class="btn bg-light-red text-white">Get Ticket</a>
           </div>
         </div>
@@ -72,47 +102,80 @@
       <!-- Nav section ends -->
 
       <!-- Banner Section starts -->
-      <div class="carousel w-full mt-12">
-        <div id="slide1" class="carousel-item relative w-full">
-          <img src="Images/1.png" class="w-full object-cover rounded-2xl lg:rounded-3xl " />
-          <div class="absolute flex gap-2 left-[40%] md:left-8 lg:left-8 bottom-8">
-            <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a> 
-            <a href="#slide2" class="btn btn-circle  bg-black text-white">❯</a>
+      <section>
+        <div class="carousel w-full mt-12">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img
+              src="Images/1.png"
+              class="w-full object-cover rounded-2xl lg:rounded-3xl"
+            />
+            <div
+              class="absolute flex gap-2 left-[40%] md:left-8 lg:left-8 bottom-8"
+            >
+              <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a>
+              <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+            </div>
           </div>
-        </div> 
-        <div id="slide2" class="carousel-item relative w-full">
-          <img src="Images/2.png" class="w-full object-cover rounded-2xl lg:rounded-3xl" />
-          <div class="absolute flex gap-2 left-[40%] md:left-8 lg:left-8 bottom-8">
-            <a href="#slide1" class="btn btn-circle  bg-black text-white">❮</a> 
-            <a href="#slide3" class="btn btn-circle  bg-black text-white">❯</a>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img
+              src="Images/2.png"
+              class="w-full object-cover rounded-2xl lg:rounded-3xl"
+            />
+            <div
+              class="absolute flex gap-2 left-[40%] md:left-8 lg:left-8 bottom-8"
+            >
+              <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a>
+              <a href="#slide3" class="btn btn-circle bg-black text-white">❯</a>
+            </div>
           </div>
-        </div> 
-        <div id="slide3" class="carousel-item relative w-full">
-          <img src="Images/3.png" class="w-full object-cover rounded-2xl lg:rounded-3xl" />
-          <div class="absolute flex gap-2 left-[40%] md:left-8 lg:left-8 bottom-8">
-            <a href="#slide2" class="btn btn-circle  bg-black text-white">❮</a> 
-            <a href="#slide4" class="btn btn-circle  bg-black text-white">❯</a>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img
+              src="Images/3.png"
+              class="w-full object-cover rounded-2xl lg:rounded-3xl"
+            />
+            <div
+              class="absolute flex gap-2 left-[40%] md:left-8 lg:left-8 bottom-8"
+            >
+              <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a>
+              <a href="#slide4" class="btn btn-circle bg-black text-white">❯</a>
+            </div>
           </div>
-        </div> 
-        <div id="slide4" class="carousel-item relative w-full">
-          <img src="Images/4.png" class="w-full object-cover rounded-2xl lg:rounded-3xl" />
-          <div class="absolute flex gap-2 left-[40%] md:left-8 lg:left-8 bottom-8">
-            <a href="#slide3" class="btn btn-circle  bg-black text-white">❮</a> 
-            <a href="#slide1" class="btn btn-circle  bg-black text-white">❯</a>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img
+              src="Images/4.png"
+              class="w-full object-cover rounded-2xl lg:rounded-3xl"
+            />
+            <div
+              class="absolute flex gap-2 left-[40%] md:left-8 lg:left-8 bottom-8"
+            >
+              <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a>
+              <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Banner Section ends -->
     </header>
     <main class="container mx-auto">
-
+      <!-- Club Section starts -->
+      <section class="mt-24">
+        <div class="p-8 border-y-2 border-dashed border-[gray-txt]">
+          <h1 class="text-black-txt text-center font-extrabold text-4xl">
+            Professional Hockeys Club
+          </h1>
+          <p
+            class="text-gray-txt text-center font-medium max-w-[600px] mx-auto"
+          >
+            Elite players, thrilling matches. Join us for top-notch competition
+            and a passion for the game on ice!
+          </p>
+        </div>
+      </section>
+      <!-- Club Section ends -->
     </main>
     <footer>
-      <div class="container mx-auto">
-
-      </div>
+      <div class="container mx-auto"></div>
     </footer>
-
   </body>
 </html>
