@@ -45,6 +45,16 @@
       .font-manrope {
         font-family: "Manrope", sans-serif;
       }
+      .image-one {
+        background: linear-gradient(rgba(19, 19, 24, 0.50), rgba(19, 19, 24, 0.50)), url('images/2.png');
+      }
+      .image-two {
+        background: linear-gradient(rgba(19, 19, 24, 0.50), rgba(19, 19, 24, 0.50)), url('images/3.png');
+      }
+      .image-three {
+        background: linear-gradient(rgba(19, 19, 24, 0.50), rgba(19, 19, 24, 0.50)), url('images/3.png');
+      }
+      
     </style>
 
     <title>Rink Rivals</title>
@@ -217,17 +227,22 @@
 
         <div class="grid-container mt-12 grid grid-cols-1 lg:grid-cols-2 gap-6">
           
-          <div class="bg-background-one bg-no-repeat bg-center bg-cover p-6 md:p-8 lg:p-10 rounded-2xl space-y-4">
-            <h1 class="text-white font-extrabold text-3xl mt-0 md:mt-16 lg:mt-24">Junior Program</h1>
-            <p class="text-white font-semibold max-w-[500px]">Exciting hockey learning for kids, fostering skills and teamwork in a fun environment for budding young players.</p>
-            <button><a class="btn bg-light-red text-white border-none">Register Now!</a></button>
-          </div>
-          <div class="bg-background-two bg-no-repeat bg-center bg-cover p-6 md:p-8 lg:p-10 rounded-2xl space-y-4">
+          
+            <div class="image-one bg-no-repeat bg-center bg-cover p-6 md:p-8 lg:p-10 rounded-2xl space-y-4">
+              
+              <h1 class="text-white font-extrabold text-3xl mt-0 md:mt-16 lg:mt-24 z-50">Junior Program</h1>
+                <p class="text-white font-semibold max-w-[500px]">Exciting hockey learning for kids, fostering skills and teamwork in a fun environment for budding young players.</p>
+                <button class="z-50"><a class="btn bg-light-red text-white border-none z-50">Register Now!</a></button>
+              
+            </div>
+          
+
+          <div class="image-two bg-no-repeat bg-center bg-cover p-6 md:p-8 lg:p-10 rounded-2xl space-y-4">
             <h1 class="text-white font-extrabold text-3xl mt-0 md:mt-16 lg:mt-24">Teenager Program</h1>
             <p class="text-white font-semibold max-w-[500px]">Tailored hockey training for teens, enhancing skills, fitness, and camaraderie in a dynamic and engaging developmental program.</p>
             <button><a class="btn bg-light-red text-white border-none">Register Now!</a></button>
           </div>
-          <div class="bg-background-three bg-no-repeat bg-center bg-cover p-6 md:p-8 lg:p-10 rounded-2xl space-y-4 lg:col-span-2">
+          <div class="image-three bg-no-repeat bg-center bg-cover p-6 md:p-8 lg:p-10 rounded-2xl space-y-4 lg:col-span-2">
             <h1 class="text-white font-extrabold text-3xl mt-0 md:mt-16 lg:mt-48">Professional Program</h1>
             <p class="text-white font-semibold max-w-[500px]">Advanced hockey coaching for aspiring players, focusing on elite skills, strategic play, and career development for a pro-level game.</p>
             <button><a class="btn bg-light-red text-white border-none">Register Now!</a></button>
