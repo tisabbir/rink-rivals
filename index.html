@@ -49,7 +49,7 @@
 
     <title>Rink Rivals</title>
   </head>
-  <body class="font-manrope">
+  <body class="font-manrope box-border max-w-[98%] mx-auto">
     <header class="container mx-auto mt-12">
       <!-- Nav section starts -->
       <nav>
@@ -519,8 +519,10 @@
           </p>
         </div>
 
-        <div class="mt-12 border-2 border-[gray-txt] p-4 lg:p-12 rounded-2xl space-y-4 lg:space-y-6">
+        <div class="mt-12 flex flex-col lg:flex-row gap-6">
           <!-- contact -->
+          <div class="border-2 border-[gray-txt] p-4 lg:p-12 rounded-2xl space-y-4 lg:space-y-6 flex-auto">
+            
           <div >
             <div class="space-y-6 bg-[#bced6d1a] p-8 rounded-2xl">
               <img src="Images/icon-phone.png" alt="">
@@ -548,9 +550,40 @@
               </div>
             </div>
           </div>
+          </div>
+          
           <!-- inputs -->
-          <div>
-
+          <div class="input-div flex-auto space-y-6 flex flex-col">
+            <div class="inputss flex flex-col lg:flex-row gap-6">
+              <div class="input-one space-y-6 w-full">
+                <div>
+                  <h2 class="text-black-txt font-extrabold text-xl">Your Name : </h2>
+                  <input type="text" placeholder="Enter your full name" class="input w-full bg-[#13131808]" />
+                </div>
+                <div>
+                  <h2 class="text-black-txt font-extrabold text-xl">Subject : </h2>
+                  <input type="text" placeholder="Enter your subject" class="input w-full bg-[#13131808]" />
+                </div>
+              </div>
+              <div class="input-two space-y-6 w-full">
+                
+                <div>
+                  <h2 class="text-black-txt font-extrabold text-xl">Your Email : </h2>
+                  <input type="email" placeholder="Enter your email" class="input w-full bg-[#13131808]" />
+                </div>
+                <div>
+                  <h2 class="text-black-txt font-extrabold text-xl">Your Phone Number: </h2>
+                  <input type="number" placeholder="Enter your phone number" class="input w-full bg-[#13131808]" />
+                </div>
+              </div>
+            </div>
+            <div class="text-area space-y-6 flex-auto flex flex-col">
+              <h2 class="text-black-txt font-extrabold text-xl">Message : </h2>
+              <div class="flex-auto">
+                <textarea class="textarea w-full h-full bg-[#13131808]" rows="5" placeholder="Write your message"></textarea>
+              </div>
+              <button class="btn bg-light-red text-white w-full"> <a class="">Get Ticket</a></button>
+            </div>
           </div>
         </div>
 
